@@ -1,0 +1,73 @@
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    text-align: center;
+    background-color: #f4f4f4;
+    background-image: url(https://www.aclassmarble.co.in/images/media_images/240514123240_blog_image.jpg);
+    }
+    /* Title Styling */
+.landing-title {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: hsl(36, 87%, 28%); /* Slightly darker color for better visibility */
+    text-align: center;
+    font-weight: 800; /* Extra bold for emphasis */
+    letter-spacing: 3px; /* Refined spacing for elegance */
+    text-transform: uppercase; /* Makes it stand out more */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3), 0 0 5px rgba(255, 204, 102, 0.6); /* Glowing shadow effect */
+  }
+  
+  /* Subtitle Styling */
+  .landing-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 20%); /* Softer black for readability */
+    max-width: 700px;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 1.8; /* Improved readability */
+    font-weight: 400;
+    background: linear-gradient(to right, #241b1c, #23201f, #352d33); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Gradient text effect */
+    text-shadow: 0 0 8px rgba(40, 30, 30, 0.6); /* Subtle glow */
+  }
+  
+  /* Background Styling for Better Visibility */
+  body {
+    background: linear-gradient(135deg, rgb(116, 98, 47),hsl(30, 4%, 18%)) ;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Optional Animation for Subtitle */
+  .landing-subtitle:hover {
+    animation: pulseGlow 1.5s infinite ease-in-out;
+  }
+  
+  @keyframes pulseGlow {
+    0% {
+      text-shadow: 0 0 8px rgba(255, 174, 201, 0.6), 0 0 12px rgba(250, 208, 196, 0.6);
+    }
+    100% {
+      text-shadow: 0 0 15px rgba(255, 174, 201, 1), 0 0 20px rgba(250, 208, 196, 1);
+    }
+  }
+  
+      
+.landing-button {
+padding: 12px 30px;
+font-size: 1rem;
+background-color:hsl(35, 91%, 8%);
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+.landing-button:hover {
+background-color: #0056b3;
+}

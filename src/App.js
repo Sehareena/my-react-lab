@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
 
+import React from 'react';
+import './Components/style/app.css'; // Import global styles
+import Navbar from './Components/Navbar';
+import LandingPage from './Components/LandingPage';
+import FooterApp from './Components/footer';
+import ContactForm from './Components/contactform';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+return (
+<div>
+<Navbar />
+<LandingPage />
 
+<ContactForm/>
+<FooterApp/>
+
+</div>
+);
+}
 export default App;
