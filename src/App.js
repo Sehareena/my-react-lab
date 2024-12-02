@@ -1,20 +1,17 @@
-
 import React from 'react';
-import './Components/style/app.css'; // Import global styles
-import Navbar from './Components/Navbar';
-import LandingPage from './Components/LandingPage';
-import FooterApp from './Components/footer';
-import ContactForm from './Components/contactform';
-function App() {
-return (
-<div>
-<Navbar />
-<LandingPage />
+import ProfileCard from './Components/ProfileCard';
 
-<ContactForm/>
-<FooterApp/>
-
-</div>
-);
+function App(props) { 
+    return (
+        <div className="app">
+            <ProfileCard
+                name="Sehareena Sheikh"
+                age={22}
+                occupation="BSCS Student"
+                location="Karachi"
+            />
+        </div>
+    );
 }
+
 export default App;
