@@ -1,0 +1,93 @@
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f8fafb, #ffffff);
+    padding: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list-group {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .list-group-item {
+    border: none;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .list-group-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .list-group-item:hover {
+    background-color: #e0e7ff;
+    transform: scale(1.02);
+  }
+  
+  .list-group-item:active {
+    background-color: #cfd8e3;
+    transform: scale(0.98);
+  }
+  
+  .list-group-item .icon {
+    margin-right: 10px;
+    color: #4caf50;
+    font-size: 1.2rem;
+  }
+  
+  .card-footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .card-footer a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .card-footer a:hover {
+    text-decoration: underline;
+    color: #8e44ad;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      padding: 15px;
+    }
+  
+    .card-title {
+      font-size: 1.3rem;
+    }
+  
+    .list-group-item {
+      padding: 10px 15px;
+    }
+  }
+  

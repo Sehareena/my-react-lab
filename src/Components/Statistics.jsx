@@ -1,18 +1,23 @@
-import React from "react";
-import './style/statistics.css'
 
-function Statistics ({stdata }) {
-    return (
-    <div className="card">
-      <div className="card-body">
-        <h5 className="card-title">System Statistics</h5>
-        <p>Total Users: {stdata.totalUsers}</p>
-        <p>Active Users: {stdata.activeUsers}</p>
-        <p>New Signups: {stdata.newSignups}</p>
-        <div>
-           <p id="active-percentage">{stdata.activePercentage?.toFixed(1)}%</p>
-        </div>
+import React from 'react';
+import './style/Statistics.css';
+
+function Statistics({ statisticsData }) {
+  const { totalUsers, activeUsers, newSignups, activePercentage } = statisticsData;
+
+  return (
+    <div className="statistics">
+      <h2>Statistics</h2>
+      <p>Total Users: {totalUsers}</p>
+      <p>Active Users: {activeUsers}</p>
+      <p>New Signups: {newSignups}</p>
+      <div className="progress-bar">
+        <div
+          className="progress"
+          style={{ width: `${activePercentage}%` }}
+        ></div>
       </div>
+      <p>Active User Percentage: {activePercentage}%</p>
     </div>
   );
 }

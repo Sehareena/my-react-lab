@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #d9e7ff, #f6fcff);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.App {
+  width: 90%;
+  max-width: 1200px;
+}
+
+.dashboard-grid {
+  display: flex; /* Changed to flex for horizontal layout */
+  gap: 20px; /* Gap between the items */
+  padding: 20px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: center; /* Centers the content horizontally */
+}
+
