@@ -1,31 +1,52 @@
-import React from 'react';
-import ProductCard from './Components/ProductCard';
+import React from "react";
+import UserInfo from "./Components/UserInfo";
+import Statistics from "./Components/Statistics";
+import Messages from "./Components/Messages";
+import "./App.css";
 
 function App() {
+  const user = {
+    name: "John Doe",
+    email: "john.doe@example.com",
+    role: "Admin",
+    profilePicture: 'https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp'
+  
+  
+   
+  };
+
+  const statisticsData = {
+    totalUsers: 1000,
+    activeUsers: 850,
+    newSignups: 150,
+    activePercentage: (850 / 1000) * 100
+  };
+
+  const messagesData = {
+    message1: "System update scheduled at 3 PM.",
+    message2: "New user registration successful.",
+    message3: "Project deadline extended."
+  };
 
   return (
-    <div className="app">
-      <h1>Product Showcase</h1>
-      <ProductCard
-        title="Wireless Headphones"
-        description="Noise-cancelling, over-ear headphones"
-        price={199.99}
-        imageUrl="https://powerhouseexpress.com.pk/cdn/shop/files/black.png?v=1698918103"
-      />
-      <ProductCard
-        title="Smartphone"
-        description="Latest model with high-resolution display"
-        price={999.99}
-        imageUrl="https://www.whatmobile.com.pk/admin/images/Apple/AppleiPhone13-b.jpg"
-      />
-      <ProductCard
-        title="Laptop"
-        description="High-performance laptop for gaming and work"
-        price={1299.99}
-        imageUrl="https://www.digitaltrends.com/wp-content/uploads/2023/04/HP-Chromebook-14a-ne0047nr-Laptop.jpg?fit=1200%2C900&p=1"
-      />
+
+  <div className="dashboard">
+      <h1 className="dashboard-title">Admin Dashboard</h1>
+      <div className="dashboard-row">
+        <div className="dashboard-column">
+          <UserInfo user1={user} />
+        </div>
+        <div className="dashboard-column">
+          <Statistics stdata={statisticsData} />
+        </div>
+        <div className="dashboard-column">
+          <Messages msgdata={messagesData} />
+        </div>
+      </div>
     </div>
   );
 }
 
 export default App;
+
+
