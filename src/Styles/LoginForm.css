@@ -1,0 +1,72 @@
+/* Container Styling */
+.login-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    border: none;
+    border-radius: 12px; /* Soft, rounded corners */
+    background: linear-gradient(135deg, #f7e1b5, #f8d0c2); /* Gradient background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Larger shadow for depth */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    color: #333; /* Dark text for better contrast */
+    text-align: center; /* Center text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Add hover effect */
+  .login-container:hover {
+    transform: translateY(-5px); /* Subtle lift effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Heading Style */
+  .login-container h2 {
+    font-size: 24px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  .login-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Button Styling */
+.login-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px; /* Added missing semicolon */
+    cursor: pointer; /* Corrected invalid value */
+  }
+  
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error Message */
+  .login-error {
+    color: red;
+    font-size: 0.9em;
+  }
+  
+  /* Heading */
+  .login-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Entered Values Section */
+  .login-values {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  
